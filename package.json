@@ -1,0 +1,25 @@
+{
+  "name": "cv-workflow-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "tsx src/cli.ts",
+    "check": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@openai/agents": "^0.21.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.0",
+    "mammoth": "^1.13.0",
+    "pdf-parse": "^2.4.5",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
